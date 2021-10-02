@@ -1,3 +1,5 @@
+package com.proyect.dev;
+
 public class restaurant {
     String Nombre;
     String Direccion;

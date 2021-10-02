@@ -1,3 +1,5 @@
+package com.proyect.dev;
+
 public class usuario {
     String nom_usuario;
     String clave;
