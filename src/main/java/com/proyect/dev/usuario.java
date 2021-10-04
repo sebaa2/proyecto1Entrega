@@ -34,4 +34,6 @@ public class usuario {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
+
+
 }
