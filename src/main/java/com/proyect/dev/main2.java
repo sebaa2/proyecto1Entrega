@@ -23,6 +23,14 @@ public class main2 {
         return pass.toString();
     }
 
+    public static String Reserva(){
+        usuario u = new usuario("marcela", "hlalskc", "f.ksjks@gmail.cl");
+        reserva r = new reserva(10,u);
+        reserva.ingreseMesas();
+        reserva.mesaDisponible();
+        reserva.reservaMesa();
 
+        return Reserva();
+    }
 
 }

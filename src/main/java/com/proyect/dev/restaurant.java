@@ -6,8 +6,8 @@ public class restaurant {
     int puntuacion;
 
     public restaurant(String nombre, String direccion, int puntuacion) {
-        Nombre = nombre;
-        Direccion = direccion;
+        this.Nombre = nombre;
+        this.Direccion = direccion;
         this.puntuacion = puntuacion;
     }
 

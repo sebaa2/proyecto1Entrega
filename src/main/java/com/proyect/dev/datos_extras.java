@@ -34,4 +34,11 @@ public class datos_extras {
     public void setAnuo_creacion(int anuo_creacion) {
         this.anuo_creacion = anuo_creacion;
     }
+
+    @Override
+    public String toString() {
+        return "Informacion del restaurant: " + "chef = " + '\n'
+                + ", especial = " + especial + '\n'
+                + ", anuo_creacion = " + anuo_creacion + '}';
+    }
 }

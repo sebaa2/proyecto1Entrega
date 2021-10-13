@@ -1,9 +1,13 @@
 package com.proyect.dev;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class usuario {
-    String nom_usuario;
-    String clave;
-    String correo;
+    private static String nom_usuario;
+    private static String clave;
+    private String correo;
 
     public usuario(String nom_usuario, String clave, String correo) {
         this.nom_usuario = nom_usuario;
@@ -19,12 +23,12 @@ public class usuario {
         this.nom_usuario = nom_usuario;
     }
 
-    public String getClave() {
+    public static String getClave() {
         return clave;
     }
 
-    public void setClave(String clave) {
-        this.clave = clave;
+    public static void setClave(String clave) {
+        usuario.clave = clave;
     }
 
     public String getCorreo() {
@@ -34,6 +38,4 @@ public class usuario {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-
-
 }
