@@ -67,23 +67,32 @@ public class Reserva {
 
     public static void menuReserva() throws IOException {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Elija opcion ");
+        boolean r = true;
+        while (r) {
+            System.out.println("Elija opcion ");
 
-        System.out.println("1. Ingrese numero de mesa\n"
-                + "2. Reservar mesa\n");
-        int opcion = teclado.nextInt();
+            System.out.println("1. Ingrese numero de mesa\n"
+                    + "2. Reservar mesa\n" +
+                    "3. Salir");
+            int opcion = teclado.nextInt();
 
-        switch (opcion) {
+            switch (opcion) {
 
-            case 1:
-                ingreseMesas();
-                mesaDisponible();
-                break;
-            case 2:
-                reservaMesa();
-                break;
+                case 1:
+                    ingreseMesas();
+                    mesaDisponible();
+                    break;
+                case 2:
+                    reservaMesa();
+                    ingreseMesas();
+                    break;
+                case 3:
+                    r = false;
+                    break;
 
+            }
         }
+
     }
 
 
