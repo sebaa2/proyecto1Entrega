@@ -1,23 +1,20 @@
 package com.proyect.dev;
 
 public class Usuario {
-    String nom_usuario;
+    String NomUsuario;
     private static String clave;
      String correo;
 
-    public Usuario(String nom_usuario, String clave, String correo) {
-        this.nom_usuario = nom_usuario;
+    public Usuario(String NomUsuario, String clave, String correo) {
+        this.NomUsuario = NomUsuario;
         this.clave = clave;
         this.correo = correo;
     }
 
-    public String getNom_usuario() {
-        return nom_usuario;
+    public String getNomUsuario() {
+        return NomUsuario;
     }
 
-    public void setNom_usuario(String nom_usuario) {
-        this.nom_usuario = nom_usuario;
-    }
 
     public static String getClave() {
         password();

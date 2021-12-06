@@ -3,9 +3,6 @@ package com.proyect.dev;
 //liberar mesa
 
 import java.util.Scanner;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.io.IOException;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
@@ -44,8 +41,8 @@ public class Reserva {
 
     public static void reservaMesa() throws IOException {
         if (mesaDisponible() == true) {
-            usuario.getNom_usuario();
-            System.out.println("Mesa reservada con exito a nombre de " + usuario.getNom_usuario());
+            usuario.getNomUsuario();
+            System.out.println("Mesa reservada con exito a nombre de " + usuario.getNomUsuario());
             Logger logger = Logger.getLogger(main2.class.getName());
             FileHandler fileLog = new FileHandler("mylog.log");
             logger.addHandler(fileLog);
