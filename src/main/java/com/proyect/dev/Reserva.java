@@ -16,7 +16,7 @@ import java.util.logging.SimpleFormatter;
 public class Reserva {
     private static String[] mesas;
     private static Usuario usuario;
-     int total_mesas;
+    int total_mesas;
     private static int mesa;
 
     public Reserva(int total_mesas, Usuario usuario) {
@@ -29,8 +29,7 @@ public class Reserva {
     public static int ingreseMesas() {
         System.out.println("ingrese mesa");
         Scanner leer = new Scanner(System.in);
-        int mesa = leer.nextInt();
-        return mesa;
+        return mesa = leer.nextInt();
     }
 
     public static boolean mesaDisponible() {
