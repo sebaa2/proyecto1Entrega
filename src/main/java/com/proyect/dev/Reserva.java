@@ -41,7 +41,7 @@ public class Reserva {
 
     public static void reservaMesa() throws IOException {
         if (mesaDisponible() == true) {
-            usuario.getNomUsuario();
+
             System.out.println("Mesa reservada con exito a nombre de " + usuario.getNomUsuario());
             Logger logger = Logger.getLogger(main2.class.getName());
             FileHandler fileLog = new FileHandler("mylog.log");
@@ -81,7 +81,7 @@ public class Reserva {
                     break;
                 case 2:
                     reservaMesa();
-                    ingreseMesas();
+
                     break;
                 case 3:
                     r = false;
