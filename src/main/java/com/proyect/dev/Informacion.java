@@ -1,11 +1,11 @@
 package com.proyect.dev;
 
-public class datos_extras {
+public class Informacion {
     String chef;
     String especial;
     int anuo_creacion;
 
-    public datos_extras(String chef, String especial, int anuo_creacion) {
+    public Informacion(String chef, String especial, int anuo_creacion) {
         this.chef = chef;
         this.especial = especial;
         this.anuo_creacion = anuo_creacion;
@@ -19,19 +19,19 @@ public class datos_extras {
         this.chef = chef;
     }
 
-    public String getEspecial() {
+    public String getPlatillo_Especial() {
         return especial;
     }
 
-    public void setEspecial(String especial) {
+    public void setPlatillo_Especial(String especial) {
         this.especial = especial;
     }
 
-    public int getAnuo_creacion() {
+    public int getAnno_creacion() {
         return anuo_creacion;
     }
 
-    public void setAnuo_creacion(int anuo_creacion) {
+    public void setAnno_creacion(int anuo_creacion) {
         this.anuo_creacion = anuo_creacion;
     }
 

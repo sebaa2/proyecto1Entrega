@@ -1,36 +1,23 @@
 package com.proyect.dev;
 
+import java.io.IOException;
+
 public class main2 {
-    public static String Pass() {
+    public static void main(String[] args) throws IOException {
+        Usuario u = new Usuario("marcela", "hlalskc", "f.ksjks@gmail.cl");
 
-        String may = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String min = may.toLowerCase();
-        String nums = "0123456789";
-        String alphanums = may + min + nums;
-        int i;
+        Reserva reserva = new Reserva(10, u);
 
-        int randomLength = 6 + (int) (Math.random() * 4);
-        StringBuilder pass = new StringBuilder(randomLength);
+        Restaurant r = new Restaurant("Macdonal", "Delicias N°23");
+        Informacion informacion = new Informacion("Camila lagos", "Papas Fritas", 2006);
+        System.out.println("Bienvenido al sistema de reserva y informacion de restaurantes");
+        // opciones: ver informacion
+        //realizar reserva
 
-        pass.append(may.charAt((int)(Math.random() * may.length())));
-        pass.append(nums.charAt((int)(Math.random() * nums.length())));
+        reserva.menuReserva();
 
-        for (i = 2; i < randomLength; i++) {
-            pass.append(alphanums.charAt((int)(Math.random() * alphanums.length())));
-        }
-
-        System.out.println(">>>" + pass.toString());
-        return pass.toString();
     }
 
-    public static String Reserva(){
-        usuario u = new usuario("marcela", "hlalskc", "f.ksjks@gmail.cl");
-        reserva r = new reserva(10,u);
-        reserva.ingreseMesas();
-        reserva.mesaDisponible();
-        reserva.reservaMesa();
-
-        return Reserva();
-    }
 
 }
+
